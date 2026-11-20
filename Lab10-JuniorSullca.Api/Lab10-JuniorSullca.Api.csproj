@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <RootNamespace>Lab10_JuniorSullca.Api</RootNamespace>
+      <UserSecretsId>56540a87-5fe0-4280-a706-4891de51e54e</UserSecretsId>
+  </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.0.13" />
+      <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="10.3.1" />
+      <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="10.3.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Lab10-JuniorSullca.Application\Lab10-JuniorSullca.Application.csproj" />
+      <ProjectReference Include="..\Lab10-JuniorSullca.Infrastructure\Lab10-JuniorSullca.Infrastructure.csproj" />
+      <ProjectReference Include="..\Lab10-JuniorSullca.Domain\Lab10-JuniorSullca.Domain.csproj" />
+    </ItemGroup>
+
+</Project>
